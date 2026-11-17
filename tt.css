@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F5EF;
+    color: #49382D;
+    line-height: 1.7;
+}
+
+/* NAVIGATION BAR */
+nav {
+    background-color: #E8DDCE;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+nav a {
+    color: #49382D;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #A07855;
+}
+
+/* HOME PAGE */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.welcome {
+    color: #A07855;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #A07855;
+}
+
+.hero h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+}
+
+/* BUTTONS */
+.button-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #8B6E55;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 10px 5px;
+    border: 2px solid #8B6E55;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #49382D;
+    border-color: #49382D;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #8B6E55;
+}
+
+.btn-outline:hover {
+    background-color: #8B6E55;
+    color: white;
+}
+
+/* HIGHLIGHTS */
+.highlights {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.highlights h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* COMMON PAGE SECTIONS */
+.page-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.page-section h1 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.section-heading {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* ABOUT BOX */
+.about-box {
+    background-color: #EFE6D9;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    font-size: 17px;
+}
+
+/* CARDS */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px auto;
+}
+
+.card {
+    background-color: #FFFFFF;
+    width: 280px;
+    padding: 28px 22px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(73,56,45,0.08);
+    transition: 0.3s;
+    border: 1px solid #E8DDCE;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(73,56,45,0.15);
+}
+
+.card h3 {
+    color: #8B6E55;
+    margin-bottom: 12px;
+    font-size: 19px;
+}
+
+/* INTEREST TAGS */
+.interests {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.interests span {
+    background-color: #E8DDCE;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* CONTACT PAGE */
+.contact-section {
+    min-height: 70vh;
+}
+
+.contact-box {
+    background-color: #EFE6D9;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 40px 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(73,56,45,0.08);
+}
+
+.contact-box h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contact-note {
+    margin-top: 20px;
+}
+
+.back-link {
+    color: #8B6E55;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    background-color: #49382D;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+/* MOBILE SCREEN */
+@media (max-width: 600px) {
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 17px;
+    }
+
+    .page-section h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+}
